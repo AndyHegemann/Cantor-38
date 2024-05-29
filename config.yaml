@@ -1,9 +1,7 @@
 meta:
   engine: 4.0.4
-  name: samoklava
-  version: 0.3
-  author: soundmonster
-  url: https://github.com/soundmonster/samoklava
+  name: Cantor-38
+  version: 0.1
 units:
   kx: cx
   ky: cy
@@ -44,17 +42,18 @@ points:
             column_net: col_ring
         middle:
           key:
-            stagger: 0.2 ky
+            stagger: 0.25 ky
             spread: kx
             column_net: col_middle
         index:
           key:
-            stagger: -0.2 ky
+            stagger: -0.25 ky
             spread: kx
             column_net: col_index
         inner:
           key:
-            stagger: -0.1 ky
+            stagger: -0.15
+             ky
             spread: kx
             column_net: col_inner
       rows:
@@ -73,19 +72,19 @@ points:
           rows.upperThumb.skip: true
           key:
             spread: kx
-            splay: -15
-            origin: [-0.5 kx, -0.5 ky]
+            splay: 7
+            origin: [2.5 kx, -6 ky]
             column_net: col_middle
         home:
+          rows.upperThumb.skip: true
           key:
-            spread: kx
+            spread: 1.1kx
             splay: -15
             origin: [-0.5 kx, -0.5 ky]
             column_net: col_index
         far:
-          rows.upperThumb.skip: true
           key:
-            spread: kx
+            spread: 1.1kx
             splay: -15
             origin: [-0.5 kx, -0.5 ky]
             column_net: col_inner
