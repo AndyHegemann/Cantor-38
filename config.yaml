@@ -68,7 +68,8 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-0.5 kx, -1 ky]
+        shift: [-0.4 kx, -.85 ky]
+      key.padding: ky
       columns:
         near:
           rows.upperThumb.skip: true
@@ -80,13 +81,13 @@ points:
         home:
           rows.upperThumb.skip: true
           key:
-            spread: 1.1kx
+            spread: 1kx
             splay: -15
             origin: [-0.5 kx, -0.5 ky]
             column_net: col_index
         far:
           key:
-            spread: 1.1kx
+            spread: 1kx
             splay: -15
             origin: [-0.5 kx, -0.5 ky]
             column_net: col_inner
@@ -94,6 +95,8 @@ points:
         lowerThumb:
         upperThumb:
           row_net: row_thumb
+
+          
         
  
 outlines:
@@ -149,7 +152,7 @@ outlines:
     - what: rectangle
       where: true
       asym: source
-      size: 14
+      size: 13.86
   keycaps:
     - what: rectangle 
       where: true
