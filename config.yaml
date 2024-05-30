@@ -1,7 +1,9 @@
 meta:
   engine: 4.0.4
-  name: Cantor-38
-  version: 0.1
+  name: samoklava
+  version: 0.3
+  author: soundmonster
+  url: https://github.com/soundmonster/samoklava
 units:
   kx: cx
   ky: cy
@@ -101,18 +103,18 @@ outlines:
       where: true
       asym: source
       size: [kx + px, ky + py]
-      corner: px
+      corner: 0
   thumbfan_glue:
     - what: polygon
       points:
         - ref: matrix_inner_bottom
-          shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
+          shift: [-0.5 kx + 0.5px, 0.5 ky + 0.5 py]
+        - ref: thumbfan_far_upperThumb
+          shift: [-0.5 kx - 0.5px, 0.5 ky + 0.5 py]
         - ref: thumbfan_far_lowerThumb
-          shift: [0.5 kx - 0.5px, 0.5 ky + 0.5 py]
-        - ref: thumbfan_far_lowerThumb
-          shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
+          shift: [0.5 kx + 0.5px, -0.5 ky - 0.5 py]
         - ref: thumbfan_near_lowerThumb
-          shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
+          shift: [-0.5 kx - 0.5 px, -0.5 ky - 0.5 py]
         - ref: matrix_pinky_bottom
           shift: [0.5 kx - 0.5 py, -0.5 ky - 0.5 py]
         - ref: matrix_pinky_home
@@ -212,7 +214,7 @@ outlines:
   plate:
     - "keywell"
     - "-switches"
-    - "-screw_holes"
+
   pcb:
     - "base_outline"
     # TODO use footprints with pad + via reinforcement as mounting holes
